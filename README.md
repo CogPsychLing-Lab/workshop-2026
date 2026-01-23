@@ -1,7 +1,7 @@
 
-# Pyschopy and EEG workshop for Cognitive Science and Psycholinguistics Workshop 2026
+# Pyschopy and EEG Workshop 2026
 
-Website for the three-day workshop
+Website for the three-day workshop for experimental cognitive science and psycholinguistics
 
 ## About
 
