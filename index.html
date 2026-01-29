@@ -395,8 +395,93 @@
             color: var(--white);
         }
 
-        /* Organizers */
-        .organizers {
+        /* Team/Organizers */
+        .team {
+            border-top: 1px solid var(--border);
+        }
+
+        /* Leadership tier */
+        .team-leadership {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .team-card {
+            text-align: center;
+        }
+
+        .team-photo-large {
+            width: 180px;
+            height: 180px;
+            border-radius: 6px;
+            object-fit: cover;
+            margin: 0 auto 1rem auto;
+            border: 1px solid var(--border);
+        }
+
+        .team-card h3 {
+            font-size: 1.15rem;
+            margin-bottom: 0.25rem;
+            color: var(--text);
+        }
+
+        .team-role {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            line-height: 1.5;
+        }
+
+        /* Supporting team tier */
+        .supporting-team-container {
+            background: rgba(10, 138, 138, 0.03);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 2rem;
+        }
+
+        .supporting-team-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .team-supporting {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+
+        .team-photo-small {
+            width: 140px;
+            height: 140px;
+            border-radius: 6px;
+            object-fit: cover;
+            margin: 0 auto 1rem auto;
+            border: 1px solid var(--border);
+        }
+
+        .team-card-small {
+            text-align: center;
+        }
+
+        .team-card-small h3 {
+            font-size: 0.95rem;
+            margin-bottom: 0;
+            color: var(--text);
+            font-weight: 400;
+        }
+
+        .team-card-small .team-role {
+            font-size: 0.8rem;
+        }
+
+        /* Organizer Affiliations */
+        .organizer-affiliations {
             border-top: 1px solid var(--border);
         }
 
@@ -683,6 +768,26 @@
                 justify-content: center;
             }
 
+            .team-leadership {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .team-supporting {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+
+            .team-photo-large {
+                width: 160px;
+                height: 160px;
+            }
+
+            .team-photo-small {
+                width: 130px;
+                height: 130px;
+            }
+
             .organizers-container {
                 grid-template-columns: 1fr;
                 gap: 2.5rem;
@@ -788,6 +893,30 @@
 
             .schedule-month {
                 font-size: 0.75rem;
+            }
+
+            .team-leadership {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .team-supporting {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .supporting-team-container {
+                padding: 1.5rem 1rem;
+            }
+
+            .team-photo-large {
+                width: 140px;
+                height: 140px;
+            }
+
+            .team-photo-small {
+                width: 120px;
+                height: 120px;
             }
 
             .organizers-row {
@@ -952,8 +1081,53 @@
             </div>
         </section>
 
-        <section class="organizers" id="organizers">
+        <section class="team" id="team">
             <h2 class="section-title">Organizers</h2>
+
+            <!-- Leadership Tier -->
+            <div class="team-leadership">
+                <div class="team-card">
+                    <img src="assets/lekhnath-pathak.png" alt="Dr. Lekhnath Sharma Pathak" class="team-photo-large">
+                    <h3>Dr. Lekhnath Sharma Pathak</h3>
+                    <p class="team-role">Convenor & Principal Investigator<br>Cognitive Science and Psycholinguistics Lab</p>
+                </div>
+
+                <div class="team-card">
+                    <img src="assets/karnakhar-khatiwada.jpeg" alt="Dr. Karnakhar Khatiwada" class="team-photo-large">
+                    <h3>Dr. Karnakhar Khatiwada</h3>
+                    <p class="team-role">Associate Professor & Head<br>Central Department of Linguistics</p>
+                </div>
+            </div>
+
+            <!-- Supporting Team Tier -->
+            <div class="supporting-team-container">
+                <p class="supporting-team-label">Supporting Team</p>
+                <div class="team-supporting">
+                    <div class="team-card-small">
+                        <img src="assets/mohan-gurung.jpg" alt="Mohan Gurung" class="team-photo-small">
+                        <h3>Mohan Gurung</h3>
+                    </div>
+
+                    <div class="team-card-small">
+                        <img src="assets/sabita-rijal.jpeg" alt="Sabita Rijal" class="team-photo-small">
+                        <h3>Sabita Rijal</h3>
+                    </div>
+
+                    <div class="team-card-small">
+                        <img src="assets/sambit-rimal.jpg" alt="Sambit Rimal" class="team-photo-small">
+                        <h3>Sambit Rimal</h3>
+                    </div>
+
+                    <div class="team-card-small">
+                        <img src="assets/aarya-pathak.png" alt="Aarya Pathak" class="team-photo-small">
+                        <h3>Aarya Pathak</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="organizer-affiliations" id="organizer-affiliations">
+            <h2 class="section-title">Organizer Affiliations</h2>
 
             <div class="organizers-container">
                 <div class="organizers-main">
